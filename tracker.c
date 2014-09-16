@@ -100,7 +100,7 @@ int main(int argc, char *argv[])
 					
 					if(r>0)
 					{
-						printf("Received: 0x%04x(%d) 0x%04x(%d)\n",*(int*)(buf1+4),*(int*)(buf1+4),*(int*)buf2,*(int*)buf2);
+						printf("Received: 0x%08x(%d) 0x%08x(%d)\n",*(int*)(buf1+4),*(int*)(buf1+4),*(int*)buf2,*(int*)buf2);
 						sendmsg(i, &msg,MSG_NOSIGNAL);
 					}
 					else 
